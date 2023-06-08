@@ -1,0 +1,183 @@
+@model IEnumerable<CCOGWebsite.Models.Ministry>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ministries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--This is a commit-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="ratio ratio-21x9 shadow p-0 mb-2">
+                <img src="https://raw.githubusercontent.com/michaelshep52/CCOGPictures/main/Getting%20Involved.png"
+                     class="rounded" alt="Giving Hands" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <div class="col-12  p-3 mb-3">
+                <h3 class="p-1 mb-1 rounded text-center">
+                    We believe the best way to give is to give your time
+                </h3>
+            </div>
+            <div class="col-12 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <h3 class="text-center">Want to give join one of our Ministry teams</h3>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Teachers</h4>
+                        <ul>
+                            <li>Adult Sunday School</li>
+                            <li>Teen Sunday School</li>
+                            <li>Childrens Sunday School</li>
+                            <li>Adult Wednesday Class</li>
+                            <li>Teens Wednesday Class</li>
+                            <li>Childrens Wednesday Class</li>
+                        </ul>
+                    </li>
+                    <li>Teacher Team Members  shoulder blank...</li>
+                </ul>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Cooks</h4>
+                        <ul>
+                            <li>Sunday School</li>
+                            <li>Wednesday Class</li>
+                        </ul>
+                    </li>
+                    <li>Cook Team Members  shoulder blank...</li>
+                </ul>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Custodians</h4>
+                        <ul>
+                            <li>Sanctuary</li>
+                            <li>Bathrooms</li>
+                            <li>Classrooms</li>
+                            <li>Fellowship Hall</li>
+                            <li>Windows</li>
+                        </ul>
+                    </li>
+                    <li>Custodian Team Members  shoulder blank...</li>
+                </ul>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Worship</h4>
+                        <ul>
+                            <li>Guitar</li>
+                            <li>Drums</li>
+                            <li>Bass</li>
+                            <li>Piano</li>
+                            <li>Vocals</li>
+                        </ul>
+                    </li>
+                    <li>Woshiper Team Members  shoulder blank...</li>
+                </ul>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Greeters</h4>
+                        <ul>
+                            <li>Front door</li>
+                            <li>Parking lot</li>
+                            <li>Greeting</li>
+
+                        </ul>
+                    </li>
+                    <li>Greeter Team Members shoulder blank...</li>
+                </ul>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Lawn Care</h4>
+                        <ul>
+                            <li>Weedeater</li>
+                            <li>Trimmer</li>
+                            <li>Landscaper</li>
+                            <li>Any Exterior building needs</li>
+                        </ul>
+                    </li>
+                    <li>Lawn Care Team Members shoulder blank...</li>
+                </ul>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Parking Lot Care</h4>
+                        <ul>
+                            <li>Trash</li>
+                            <li>Parking</li>
+                            <li>Greeting</li>
+                            <li>Any Parking lot needs</li>
+                        </ul>
+                    </li>
+                    <li>Parking Lot Care Team Members shoulder blank...</li>
+                </ul>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Technical</h4>
+                        <ul>
+                            <li>Computer</li>
+                            <li>Sound Board</li>
+                            <li>Electrical</li>
+                            <li>Any Technical/Electrical building needs</li>
+                        </ul>
+                    </li>
+                    <li>Technical Team Members shoulder blank...</li>
+                </ul>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Outreach</h4>
+                        <ul>
+                            <li>Broshears</li>
+                            <li>Communitcation</li>
+                            <li>Marketing</li>
+                            <li>Any Outreach needs</li>
+                        </ul>
+                    </li>
+                    <li>Outreach Team Members shoulder blank...</li>
+                </ul>
+            </div>
+            <div class="col-5 shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <h4 class="text-center">Care</h4>
+                        <ul>
+                            <li>Calling</li>
+                            <li>Communication</li>
+                            <li>Hospital Visits</li>
+                            <li>Home Visits</li>
+                            <li>Any Congregational needs</li>
+                        </ul>
+                    </li>
+                    <li>Care Team Members shoulder blank...</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col text-center">
+            <a class="btn btn-fance rounded-pill" asp-controller="Home" asp-action="About" role="button">Join a Team!</a>
+        </div>
+    </div>
+</body>
+</html>

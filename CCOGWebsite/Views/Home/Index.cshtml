@@ -1,0 +1,173 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Christopher Church Of God</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--This is a commit-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 fancy shadow p-3 mb-3 bg-body-tertiary rounded-pill border border-2">
+                <h3 class="text-center">Christopher Church Of God Welcomes you!</h3>
+            </div>
+            <div class="ratio ratio-16x9 shadow p-0 mb-2">
+                <iframe class="rounded-3"
+                        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FChristopherChurchofGod%2Fvideos%2F778209200320045%2F&show_text=false&width=560&t=0"
+                        style="border:none;overflow:hidden"
+                        scrolling="no" frameborder="0" allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowFullScreen="true">
+                </iframe>
+            </div>
+            <div>
+                <button type="button" class="btn btn-fance rounded-pill">Watch Services</</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <div class="col-5 p-3 mb-3">
+                <h3>Kids During Worship</h3>
+            </div>
+            <div class="col-5 p-3 mb-3">
+                <h3>Kids Drama</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col rounded shadow p-1 mb-1">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FChristopherChurchofGod%2Fvideos%2F905253900589182%2F&show_text=false&width=267&t=0"
+                        style="width:100%; height:100%; border:none;
+                        overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowFullScreen="true">
+                </iframe>
+            </div>
+            <div class="col rounded shadow p-1 mb-1">
+                <img src="https://github.com/michaelshep52/CCOGPictures/blob/main/KidsDrama.png?raw=true"
+                     alt="Kids Drama" style="width:100%; height:100%">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center p-3 mb-3">
+                <h3>Recent Baptisms</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col rounded shadow p-2 mb-2">
+                <img src="https://raw.githubusercontent.com/michaelshep52/CCOGPictures/main/aBaptism.png"
+                     class="rounded" alt="Baptism" style="width:100%">
+            </div>
+            <div class="col rounded shadow p-2 mb-2">
+                <img src="https://raw.githubusercontent.com/michaelshep52/CCOGPictures/main/bBaptism.png"
+                     class="rounded" alt="Baptism" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col rounded shadow p-2 mb-2">
+                <img src="https://raw.githubusercontent.com/michaelshep52/CCOGPictures/main/cBaptism.png"
+                     class="rounded" alt="Baptism" style="width:100%">
+            </div>
+            <div class="col rounded shadow p-2 mb-2">
+                <img src="https://raw.githubusercontent.com/michaelshep52/CCOGPictures/main/dBaptism.png"
+                     class="rounded" alt="Baptism" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col rounded shadow p-2 mb-2">
+                <img src="https://raw.githubusercontent.com/michaelshep52/CCOGPictures/main/eBaptism.png"
+                     class="rounded" alt="Baptism" style="width:100%">
+            </div>
+            <div class="col rounded shadow p-2 mb-2">
+                <h5>Baptism is a public confession of faith</h5>
+                <p>
+                    Jesus challenged his disciples to confess their faith before others
+                    and to walk before others as his disciples (Matthew 10: 32-3; 16: 13-17, 24).
+                </p>
+                <p>
+                    Baptism presents an opportunity to the new believer to confess before others
+                    that Jesus is Lord and Savior.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center p-3 mb-3">
+                <h3>Mother's Day</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col rounded shadow p-1 mb-1">
+                <div class="ratio ratio-16x9">
+                    <img src="https://raw.githubusercontent.com/michaelshep52/CCOGPictures/main/MothersDay.png"
+                         class="rounded" alt="Mothers Day" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <div class="col-4  p-3 mb-3">
+                <ul class="list-unstyled text-center d-grid gap-2">
+                    <li>
+                        <h4 class="shadow p-1 mb-1 bg-body-tertiary rounded">
+                            Learn More:
+                        </h4>
+                    </li>
+                    <li><a class="btn btn-fance rounded-pill" asp-controller="Ministries" asp-action="Index" role="button">Ministries</a></li>
+                    <li><a class="btn btn-fance rounded-pill" asp-controller="Home" asp-action="About" role="button">About us</a></li>
+                    <li><a class="btn btn-fance rounded-pill" asp-controller="Events" asp-action="Index" role="button">Events</a></li>
+                    <li><a class="btn btn-fance rounded-pill" asp-controller="Home" asp-action="OnlineServices" role="button">Services</a></li>
+                    <li><a class="btn btn-fance rounded-pill" asp-controller="Home" asp-action="Giving" role="button">Giving</a></li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <ul class="list-unstyled shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                    <li>
+                        <h5 class="text-center">Hours of Operation:</h5>
+                        <ul>
+                            <li>10 AM Sunday School</li>
+                            <li>11 AM Sunday Morning Worship Service</li>
+                            <li>6:30 PM Wednesday Night Bible Study</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <div class="col-9 fancy rounded shadow p-3 mb-3 bg-body-tertiary rounded border border-2 border-black">
+                <h3 class="text-center">Follow us on Social Media</h3>
+                <br />
+                <a class="btn btn-primary rounded-pill shadow"
+                   href="https://www.facebook.com/ChristopherChurchofGod"
+                   title="This take you to our Facebook page"
+                   role="button">
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
