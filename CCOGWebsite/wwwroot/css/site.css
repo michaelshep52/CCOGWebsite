@@ -20,6 +20,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+p{
+    text-indent: 10%;
+}
 col {
     background-color: #35247B;
 }
