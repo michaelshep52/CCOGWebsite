@@ -1,0 +1,47 @@
+@model CCOGWebsite.Models.Giving
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-7 fancy shadow p-3 mb-3 bg-body-tertiary rounded border border-2">
+            <h1 class="text-center">Giving</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 p-2">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Amount" class="control-label"></label>
+                    <input asp-for="Amount" class="form-control" placeholder="$5" />
+                    <span asp-validation-for="Amount" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="GivingTowards" class="control-label"></label>
+                    <select asp-for="GivingTowards" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Tithe</option>
+                        <option>Childrens Ministry</option>
+                        <option>Teens Ministry</option>
+                        <option>Offering</option>
+                        <option>Building Fund</option>
+                        <option>Worship Team Fund</option>
+                    </select>
+                    <span asp-validation-for="GivingTowards" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Create"  class="btn btn-fance rounded-pill" />
+                    <a class="btn btn-fance rounded-pill" asp-action="Index">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+ </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

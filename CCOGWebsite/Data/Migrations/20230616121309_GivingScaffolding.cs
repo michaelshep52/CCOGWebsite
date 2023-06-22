@@ -5,23 +5,23 @@
 namespace CCOGWebsite.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class MinistryAdded : Migration
+    public partial class GivingScaffolding : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Ministries",
+                name: "Givings",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: false),
-                    Details = table.Column<string>(type: "TEXT", nullable: false)
+                    Amount = table.Column<string>(type: "TEXT", nullable: false),
+                    GivingTowards = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Ministries", x => x.Id);
+                    table.PrimaryKey("PK_Givings", x => x.Id);
                 });
         }
 
@@ -29,7 +29,7 @@ namespace CCOGWebsite.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Ministries");
+                name: "Givings");
         }
     }
 }

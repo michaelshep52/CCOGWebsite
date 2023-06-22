@@ -11,7 +11,6 @@ public class ApplicationDbContext : IdentityDbContext
     {
     }
     public DbSet<Event> Events { get; set; }
-    public DbSet<Ministry> Ministries { get; set; }
-
+    public DbSet<Giving> Givings { get; set; }
 }
 

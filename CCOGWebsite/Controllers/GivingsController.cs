@@ -10,87 +10,87 @@ using CCOGWebsite.Models;
 
 namespace CCOGWebsite.Controllers
 {
-    public class MinistriesController : Controller
+    public class GivingsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public MinistriesController(ApplicationDbContext context)
+        public GivingsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Ministries
+        // GET: Givings
         public async Task<IActionResult> Index()
         {
-              return _context.Ministries != null ? 
-                          View(await _context.Ministries.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Ministries'  is null.");
+              return _context.Givings != null ? 
+                          View(await _context.Givings.ToListAsync()) :
+                          Problem("Entity set 'ApplicationDbContext.Givings'  is null.");
         }
 
-        // GET: Ministries/Details/5
+        // GET: Givings/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Ministries == null)
+            if (id == null || _context.Givings == null)
             {
                 return NotFound();
             }
 
-            var ministry = await _context.Ministries
+            var giving = await _context.Givings
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (ministry == null)
+            if (giving == null)
             {
                 return NotFound();
             }
 
-            return View(ministry);
+            return View(giving);
         }
 
-        // GET: Ministries/Create
+        // GET: Givings/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Ministries/Create
+        // POST: Givings/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Details")] Ministry ministry)
+        public async Task<IActionResult> Create([Bind("Id,Amount,GivingTowards")] Giving giving)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(ministry);
+                _context.Add(giving);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(ministry);
+            return View(giving);
         }
 
-        // GET: Ministries/Edit/5
+        // GET: Givings/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Ministries == null)
+            if (id == null || _context.Givings == null)
             {
                 return NotFound();
             }
 
-            var ministry = await _context.Ministries.FindAsync(id);
-            if (ministry == null)
+            var giving = await _context.Givings.FindAsync(id);
+            if (giving == null)
             {
                 return NotFound();
             }
-            return View(ministry);
+            return View(giving);
         }
 
-        // POST: Ministries/Edit/5
+        // POST: Givings/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Details")] Ministry ministry)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Amount,GivingTowards")] Giving giving)
         {
-            if (id != ministry.Id)
+            if (id != giving.Id)
             {
                 return NotFound();
             }
@@ -99,12 +99,12 @@ namespace CCOGWebsite.Controllers
             {
                 try
                 {
-                    _context.Update(ministry);
+                    _context.Update(giving);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MinistryExists(ministry.Id))
+                    if (!GivingExists(giving.Id))
                     {
                         return NotFound();
                     }
@@ -115,49 +115,49 @@ namespace CCOGWebsite.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(ministry);
+            return View(giving);
         }
 
-        // GET: Ministries/Delete/5
+        // GET: Givings/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Ministries == null)
+            if (id == null || _context.Givings == null)
             {
                 return NotFound();
             }
 
-            var ministry = await _context.Ministries
+            var giving = await _context.Givings
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (ministry == null)
+            if (giving == null)
             {
                 return NotFound();
             }
 
-            return View(ministry);
+            return View(giving);
         }
 
-        // POST: Ministries/Delete/5
+        // POST: Givings/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Ministries == null)
+            if (_context.Givings == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Ministries'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.Givings'  is null.");
             }
-            var ministry = await _context.Ministries.FindAsync(id);
-            if (ministry != null)
+            var giving = await _context.Givings.FindAsync(id);
+            if (giving != null)
             {
-                _context.Ministries.Remove(ministry);
+                _context.Givings.Remove(giving);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool MinistryExists(int id)
+        private bool GivingExists(int id)
         {
-          return (_context.Ministries?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Givings?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

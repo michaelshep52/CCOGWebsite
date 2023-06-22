@@ -23,9 +23,17 @@ public class HomeController : Controller
     }
     public IActionResult Giving()
     {
+        return  View();
+    }
+    public IActionResult Ministry()
+    {
         return View();
     }
-      
+    public IActionResult MinistryForm()
+    {
+        return View();
+    }
+
     public IActionResult OnlineServices()
     {
         return View();

@@ -1,4 +1,4 @@
-@model CCOGWebsite.Models.Event
+@model CCOGWebsite.Models.Giving
 
 @{
     ViewData["Title"] = "Details";
@@ -8,26 +8,20 @@
     <div class="row justify-content-evenly">
         <div class="col-8">
             <h1 class="text-center fancy shadow p-3 mb-4 bg-body-tertiary rounded border border-2">
-                Event Details
+                Giving Details
             </h1>
             <dl class="row justify-content-evenly text-center">
                 <dt class="col-sm-2">
-                    <u>@Html.DisplayNameFor(model => model.Name):</u>
+                    <u> @Html.DisplayNameFor(model => model.Amount): </u>
                 </dt>
                 <dd class="col-sm-10">
-                    @Html.DisplayFor(model => model.Name)
+                    @Html.DisplayFor(model => model.Amount)
                 </dd>
                 <dt class="col-sm-2">
-                    <u>@Html.DisplayNameFor(model => model.Details):</u>
+                    <u>@Html.DisplayNameFor(model => model.GivingTowards):</u>
                 </dt>
                 <dd class="col-sm-10">
-                    @Html.DisplayFor(model => model.Details)
-                </dd>
-                <dt class="col-sm-2">
-                    <u>@Html.DisplayNameFor(model => model.Date):</u>
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(model => model.Date)
+                    @Html.DisplayFor(model => model.GivingTowards)
                 </dd>
             </dl>
         </div>

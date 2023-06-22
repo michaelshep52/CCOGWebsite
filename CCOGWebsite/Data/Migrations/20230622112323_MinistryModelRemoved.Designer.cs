@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CCOGWebsite.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230607133031_MinistryAdded")]
-    partial class MinistryAdded
+    [Migration("20230622112323_MinistryModelRemoved")]
+    partial class MinistryModelRemoved
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,23 +42,23 @@ namespace CCOGWebsite.Data.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("CCOGWebsite.Models.Ministry", b =>
+            modelBuilder.Entity("CCOGWebsite.Models.Giving", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Details")
+                    b.Property<string>("Amount")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("GivingTowards")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Ministries");
+                    b.ToTable("Givings");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
