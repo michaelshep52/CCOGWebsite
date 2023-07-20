@@ -10,9 +10,9 @@ Local Church Webpage
 * SQLite
 ....
 ## Pictures
-<img width="1280" alt="Screenshot 2023-07-20 at 6 59 58 AM" src="https://github.com/michaelshep52/CCOGWebsite/assets/112525897/903329de-adc2-4eac-be03-fef086ba25bd">
-<img width="1280" alt="Screenshot 2023-07-20 at 6 59 55 AM" src="https://github.com/michaelshep52/CCOGWebsite/assets/112525897/5c248de1-4627-4b68-a0bc-b1651cb59c08">
 <img width="1280" alt="Screenshot 2023-07-20 at 6 59 34 AM" src="https://github.com/michaelshep52/CCOGWebsite/assets/112525897/8693b8e5-62b1-4d5f-ada8-07003083d7d0">
+<img width="1280" alt="Screenshot 2023-07-20 at 6 59 55 AM" src="https://github.com/michaelshep52/CCOGWebsite/assets/112525897/5c248de1-4627-4b68-a0bc-b1651cb59c08">
+<img width="1280" alt="Screenshot 2023-07-20 at 6 59 58 AM" src="https://github.com/michaelshep52/CCOGWebsite/assets/112525897/903329de-adc2-4eac-be03-fef086ba25bd">
 <img width="1280" alt="Screenshot 2023-07-20 at 7 00 01 AM" src="https://github.com/michaelshep52/CCOGWebsite/assets/112525897/12f50ec3-244a-4710-b869-b290db4b720e">
 <img width="1280" alt="Screenshot 2023-07-20 at 7 00 03 AM" src="https://github.com/michaelshep52/CCOGWebsite/assets/112525897/1a16de21-cea8-4793-a0a7-794894d7273a">
 <img width="1280" alt="Screenshot 2023-07-20 at 7 00 09 AM" src="https://github.com/michaelshep52/CCOGWebsite/assets/112525897/46661982-9f2b-4376-a7b8-6d73d808f4fd">
